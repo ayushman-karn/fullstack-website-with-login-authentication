@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lobster two", cursive;
+  height: 100%;
+}
+
+body {
+  background: url(/pexels-ray-bilcliff-2055389.jpg);
+  background-repeat: no-repeat;
+}
+
+#head2 {
+  text-align: center;
+  color: white;
+  font-size: calc(20px + 1.5vw);
+  transform: translateY(-300%);
+  pointer-events: none;
+  transition: 0.6s;
+}
+
+.head1 {
+  background: #5abeed;
+  padding: 1rem 0 5.7rem 0;
+  border: 0.4rem solid #c2e9fb;
+}
+
+.nav-lines {
+  float: left;
+  padding-left: 1rem;
+  opacity: 0.85;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-lines:hover {
+  opacity: 1;
+}
+
+a {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+#div1,
+#div2,
+#div3,
+#div4 {
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 90%;
+  max-width: 850px;
+  height: 35%;
+  background-color: transparent;
+  /* transition: 0.6s; */
+  font-size: calc(12px + 0.3vw);
+  text-align: center;
+  color: white;
+  overflow: visible;
+}
+
+/* #div1 {
+  transform: translateX(-900%);
+}
+
+#div2 {
+  transform: translateX(900%);
+} */
+
+#nav-div {
+  background: #5abeed;
+  display: flex;
+  flex-wrap: wrap;
+  height: 91.1%;
+  width: 0;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 7.1rem;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#nav-div a {
+  margin: 2.5rem 0.5rem 2.5rem 0.5rem;
+  border-bottom: 0.1rem solid skyblue;
+  padding: 0.8rem 0.8rem 0.8rem 3.2rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#nav-div a:hover {
+  color: skyblue;
+}
