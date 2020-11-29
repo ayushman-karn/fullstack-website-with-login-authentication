@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Lobster two", cursive;
+  font-family: "Roboto", sans-serif;
   height: 100%;
 }
 
@@ -82,7 +82,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   height: 91.1%;
-  width: 0;
+  width: 0rem;
   font-size: 1.5rem;
   position: absolute;
   top: 7.1rem;

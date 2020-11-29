@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Lobster two", cursive;
+  font-family: "Roboto", sans-serif;
   height: 100%;
 }
 
@@ -54,7 +54,7 @@ a:hover {
 input[type="text"],
 input[type="password"],
 input[type="email"],
-#coun {
+#country {
   width: 25rem;
   padding: 1.1rem;
   margin: 0.32rem 0 1.01rem 0;
@@ -137,7 +137,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   height: 91.1%;
-  width: 0;
+  width: 0rem;
   font-size: 1.5rem;
   position: absolute;
   top: 7.1rem;

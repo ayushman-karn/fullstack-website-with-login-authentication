@@ -6,95 +6,98 @@
     <link rel="icon" href="/charity_icon_138782.ico" />
     <title>Signup</title>
     <link rel="stylesheet" href="/SignupStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="Signup" id="signup">
+  <body class="Signup">
     <%- include('./nav.ejs') %>
     <h1 id="head2">Wildlife : Resurrection</h1>
-    <form id="main">
-      <div class="container">
-        <h1>Sign Up</h1>
-        <p>Please fill in this form to create an account.</p>
-        <hr />
-        <label for="FirstName"><b>First Name:</b><br /></label>
-        <input
-          type="text"
-          placeholder="Enter First Name"
-          name="FirstName"
-          id="FirstName"
-          required
-        />
-        <br />
-        <label for="LastName"><b>Last Name:</b><br /></label>
-        <input
-          type="text"
-          placeholder="Enter Last Name"
-          name="LastName"
-          id="LastName"
-          required
-        />
-        <br />
-        <label for="email"><b>Email:</b><br /></label>
-        <input
-          type="email"
-          placeholder="Enter Email"
-          name="email"
-          id="email"
-          required
-        />
-        <br />
-        <label for="pass"><b>Password:</b><br /></label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="pass"
-          id="pass"
-          minlength="4"
-          required
-        />
-        <br />
-        <label for="pass-confirm"><b>Confirm Password:</b><br /></label>
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          name="pass-confirm"
-          id="pass-confirm"
-          minlength="4"
-          required
-        />
-        <br />
-        <label>
-          <b>Choose Country:</b><br />
-          <select name="coun" id="coun">
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="South Africa">South Africa</option>
-            <option value="Australia">Australia</option>
-            <option value="Others">Others</option>
-          </select>
-        </label>
-        <br />
-        <label>
+    <div class="page-content">
+      <form id="main" action="/Signup" method="POST">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr />
+          <label for="firstName"><b>First Name:</b><br /></label>
           <input
-            type="checkbox"
-            checked="checked"
-            name="remember"
-            style="margin-bottom: 15px"
+            type="text"
+            placeholder="Enter First Name"
+            name="firstName"
+            id="firstName"
+            required
           />
-          Remember me
-        </label>
-        <p>
-          By creating an account you agree to our
-          <a href="#" style="color: skyblue">Terms & Privacy</a>.
-        </p>
-        <div class="btnContainer">
-          <button type="submit" id="signupbtn">Sign Up</button>
+          <br />
+          <label for="lastName"><b>Last Name:</b><br /></label>
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            name="lastName"
+            id="lastName"
+            required
+          />
+          <br />
+          <label for="email"><b>Email:</b><br /></label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+          <br />
+          <label for="pass"><b>Password:</b><br /></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="pass"
+            id="pass"
+            minlength="4"
+            required
+          />
+          <br />
+          <label for="passConfirm"><b>Confirm Password:</b><br /></label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="passConfirm"
+            id="passConfirm"
+            minlength="4"
+            required
+          />
+          <br />
+          <label>
+            <b>Choose Country:</b><br />
+            <select name="country" id="country">
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Australia">Australia</option>
+              <option value="Others">Others</option>
+            </select>
+          </label>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
+          </label>
+          <p>
+            By creating an account you agree to our
+            <a href="#" style="color: skyblue">Terms & Privacy</a>.
+          </p>
+          <div class="btnContainer">
+            <button type="submit" id="signupbtn">Sign Up</button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
     <script defer src="/SignupApp.js"></script>
   </body>
 </html>
