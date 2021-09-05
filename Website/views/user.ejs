@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <link rel="stylesheet" href="/UserStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="login">
+    <%- include('./nav.ejs') %>
+    <h1 id="head2">Wildlife : Resurrection</h1>
+    <div class="page-content">
+      <h1 class="Name">Hello <%= name %></br>Welcome to your user page</h1>
+      <form action= <%= action %> method = "POST">
+        <label for="bio"><h1 class="Name" style="color: white; padding-top: 2rem;">Bio : </h1></label>
+        <textarea name="bio" id="bio" cols="40" rows="10" style="background-color:#5abeed; margin-left: 2rem; color: white;"><%= bio %></textarea>
+        <div class="btnContainer">
+          <button type="submit" id="save">Save</button>
+        </div>
+      </form>
+    </div>
+    <script defer src="/UserApp.js"></script>
+  </body>
+</html>

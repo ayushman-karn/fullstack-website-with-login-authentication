@@ -14,6 +14,7 @@ const formSchema = new Schema(
     email: {
       type: String,
       required: true,
+      unique: true,
     },
     pass: {
       type: String,
@@ -26,6 +27,14 @@ const formSchema = new Schema(
     country: {
       type: String,
       required: true,
+    },
+    bio: {
+      type: String,
+      required: false,
+    },
+    verification: {
+      type: Boolean,
+      required: false,
     },
   },
   { timestamps: true }

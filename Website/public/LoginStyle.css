@@ -45,17 +45,14 @@ body {
 a {
   opacity: 0.75;
   transition: 0.3s;
-  text-decoration: none;
 }
 
 a:hover {
   opacity: 1;
 }
 
-input[type="text"],
 input[type="password"],
-input[type="email"],
-#country {
+input[type="email"] {
   width: 25rem;
   padding: 1.1rem;
   margin: 0.32rem 0 1.01rem 0;
@@ -69,22 +66,12 @@ input:focus {
   outline: none;
 }
 
-#coun {
-  color: grey;
-}
-
-#coun:focus {
-  background-color: white;
-  color: black;
-  outline: none;
-}
-
 hr {
   border: 1px solid rgb(12, 108, 146);
   margin-bottom: 25px;
 }
 
-#signupbtn {
+#loginbtn {
   background-color: #c2e9fb;
   border-radius: 1.1rem;
   color: rgb(12, 108, 146);
@@ -98,7 +85,7 @@ hr {
   transition: all ease 0.3s;
 }
 
-#signupbtn:hover {
+#loginbtn:hover {
   opacity: 1;
   color: #c2e9fb;
   background: rgb(12, 108, 146);
@@ -116,22 +103,6 @@ hr {
   background: transparent;
   color: white;
 }
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.6rem;
-  margin: 0rem auto;
-  margin-bottom: 2%;
-  padding: 0;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  border: 0.4rem solid #5abeed;
-  background: transparent;
-  color: white;
-} */
 
 #nav-div {
   background: #5abeed;

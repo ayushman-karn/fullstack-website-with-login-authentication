@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <link rel="stylesheet" href="/LoginStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="login">
+    <%- include('./nav.ejs') %>
+    <h1 id="head2">Wildlife : Resurrection</h1>
+    <div class="page-content">
+    <form action="/login" method="POST">
+      <div class="container">
+        <h1>Log In</h1>
+        <p>Log into your account here.</p>
+        <hr />
+        <label for="email"><b>Email:</b><br /></label>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+        <br />
+        <label for="password"><b>Password:</b><br /></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="password"
+          required
+        />
+        <br />
+        <p>
+          By loggin into your account you agree to our
+          <a href="#" style="color: aqua">Terms & Privacy</a>.
+        </p>
+        <div class="btnContainer">
+          <button type="submit" id="loginbtn">Log In</button>
+        </div>
+      </div>
+    </div>
+    </form>
+    <script defer src="/LoginApp.js"></script>
+  </body>
+</html>
